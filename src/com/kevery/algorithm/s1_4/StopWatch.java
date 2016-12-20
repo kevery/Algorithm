@@ -20,6 +20,7 @@ public class StopWatch {
     public static void main(String[] args) throws InterruptedException {
         StopWatch stopWatch = new StopWatch();
         Thread.sleep(4699);
+        System.out.println(1111);
         double time = stopWatch.elapsedTime();
         System.out.println(time);
     }
