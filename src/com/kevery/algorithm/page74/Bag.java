@@ -2,7 +2,6 @@ package com.kevery.algorithm.page74;
 
 import java.util.Iterator;
 import java.util.Spliterator;
-import java.util.Stack;
 import java.util.function.Consumer;
 
 /**
