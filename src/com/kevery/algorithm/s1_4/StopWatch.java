@@ -25,6 +25,7 @@ public class StopWatch {
         System.out.println(time);
         System.out.println("dev");
         System.out.println("dev12");
+        System.out.println("dev");
     }
 
     public void test(){
