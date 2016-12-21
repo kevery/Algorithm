@@ -26,7 +26,6 @@ public class StopWatch {
         System.out.println(time);
         System.out.println(11);
         System.out.println("kever");
-        System.out.println("dfdfdfd");
         System.out.println(1);
     }
 }
