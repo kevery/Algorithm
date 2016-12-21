@@ -22,6 +22,10 @@ public class StopWatch {
         Thread.sleep(4699);
         double time = stopWatch.elapsedTime();
         System.out.println(time);
+        System.out.println("122");
+        System.out.println("122");
+        System.out.println("134");
         System.out.println("fixbug");
     }
+
 }
