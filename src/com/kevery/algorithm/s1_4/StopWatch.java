@@ -22,12 +22,5 @@ public class StopWatch {
         Thread.sleep(4699);
         double time = stopWatch.elapsedTime();
         System.out.println(time);
-        System.out.println("dev");
-        System.out.println("dev12");
-        System.out.println("dev");
-    }
-
-    public void test(){
-
     }
 }
