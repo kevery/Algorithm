@@ -111,6 +111,7 @@ public class Stack<Item> implements Iterable {
         while (iterator.hasNext()) {
             String next = iterator.next();
             System.out.println(next);
+            System.out.println(1);
         }
     }
 

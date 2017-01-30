@@ -22,7 +22,11 @@ public class StopWatch {
         Thread.sleep(4699);
         System.out.println(1111);
         double time = stopWatch.elapsedTime();
-        System.out.println(111111111);
         System.out.println(time);
+        System.out.println(time);
+        System.out.println(time);
+        System.out.println(11);
+        System.out.println("kever");
+        System.out.println("dfdfdfd");
     }
 }
