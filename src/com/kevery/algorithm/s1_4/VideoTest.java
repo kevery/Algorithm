@@ -7,8 +7,8 @@ package com.kevery.algorithm.s1_4;
  */
 public class VideoTest {
     public int binarySearch(int[] items, int target) {
-        int left=1;
-        int right=items.length;
+        int left=0;
+        int right=items.length-1;
         while (left <= right) {
             int mid = (left + right) / 2;
             if (target < items[mid]) {
