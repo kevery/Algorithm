@@ -12,9 +12,9 @@ public class VideoTest {
         while (left <= right) {
             int mid = (left + right) / 2;
             if (target < items[mid]) {
-                right = mid - 1;
+                right = mid ;
             }else if(target>items[mid]){
-                left = mid + 1;
+                left = mid ;
             }else {
                 return mid;
             }
@@ -25,8 +25,10 @@ public class VideoTest {
     public static void main(String[] args) {
         VideoTest videoTest = new VideoTest();
         int[] items={4, 8, 9, 9,45,89,120};
-        int i = videoTest.binarySearch(items, 8);
+        int i = videoTest.binarySearch(items, 120);
         System.out.println(i);
+        System.out.println(2);
+
 
     }
 }
