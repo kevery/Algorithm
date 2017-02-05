@@ -3,6 +3,7 @@ package test.com.kevery.algorithm;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
 /**
  * Page31 Tester.
@@ -21,6 +22,12 @@ public class Page31Test {
     public void after() throws Exception {
     }
 
+    @Test
+    public void name() throws Exception {
+        String a = "abc";
+        String b=a;
+        String c = a;
 
 
-} 
+    }
+}
