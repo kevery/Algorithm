@@ -72,6 +72,7 @@ public class BST<Key extends Comparable<Key>, Value> {
             node.value = value;
         }
         node.count = size(node.left) + size(node.right);
+        System.out.println(1);
         return node;
     }
 
