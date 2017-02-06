@@ -113,8 +113,6 @@ public class Stack<Item> implements Iterable {
             System.out.println(next);
             System.out.println(1);
         }
-        System.out.println(111);
-        System.out.println("bug");
     }
 
 
