@@ -27,7 +27,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     private int size(Node node) {
-        if (root == null) {
+        if (node == null) {
             return 0;
         } else {
             return node.N;
@@ -75,4 +75,62 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     }
 
+    //最小键
+    Key min() {
+        return min(root);
+    }
+
+    private Key min(Node node) {
+        if (node.left == null) {
+            return node.key;
+        } else {
+            return min(node.left);
+        }
+
+    }
+
+    //最大键
+    Key max() {
+        return max(root);
+    }
+
+    private Key max(Node node) {
+        if (node.right == null) {
+            return node.key;
+        } else {
+            return max(node.right);
+        }
+    }
+
+    //向下取整
+    Key floor(Key key) {
+        Node floor = floor(root, key);
+        if (floor == null) {
+            return null;
+        } else {
+            return floor.key;
+        }
+    }
+
+    Node floor(Node node, Key key) {
+        if (node == null) {
+            return null;
+        }
+        int cpm = key.compareTo(node.key);
+        if (cpm == 0) {
+            return node;
+        }
+        if (cpm < 0) {
+            Node floor = floor(node.left, key);
+            return floor;
+        }
+        Node t = floor(node.right, key);
+        if (t != null) {
+            return t;
+        } else {
+            return node;
+        }
+    }
+
+    //向上取整
 }
