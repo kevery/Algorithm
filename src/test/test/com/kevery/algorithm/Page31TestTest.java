@@ -1,6 +1,7 @@
 package test.com.kevery.algorithm;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -60,5 +61,18 @@ public class Page31TestTest {
         if (num > 0) {
             digui(num - 1);
         }
+    }
+
+    public int fbi(int i) {
+        if (i < 2) {
+            return i == 0 ? 0 : 1;
+        }
+        return fbi(i - 1) + fbi(i - 2);
+    }
+
+
+    @Test
+    public void fbiTest() {
+        Assert.assertEquals(13, fbi(7));
     }
 }
