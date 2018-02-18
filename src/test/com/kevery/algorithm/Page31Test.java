@@ -1,4 +1,3 @@
-
 package test.com.kevery.algorithm;
 
 import org.junit.After;
@@ -25,7 +24,7 @@ public class Page31Test {
     @Test
     public void name() throws Exception {
         String a = "abc";
-        String b=a;
+        String b = a;
         String c = a;
 
 
